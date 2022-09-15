@@ -1,100 +1,167 @@
 /* font on oll */
-body{
-    font-family: 'Roboto';
+body {
+  font-family: "Roboto";
 }
 /* take away points from everyone */
-.list{
-    list-style: none;
+.list {
+  list-style: none;
 }
 /* take away emphasis */
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
 }
 /* header logo */
-.header-logo{
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
 }
 /* part of the logo black */
-span{
-    color: #212121;
+span {
+  color: #212121;
 }
 
 /* text nav */
-.header-list-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-
+.header-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 /* text mail and tel */
-.header-mail, .header-tel{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 /* hover to header text */
-.header-list-link:hover, .header-list-link:focus {
-    color: #2196F3;
+.header-list-link:hover,
+.header-list-link:focus {
+  color: #2196f3;
 }
 /* hover to header mail and tel*/
-.header-mail:hover, .header-mail:focus, 
-.header-tel:hover, .header-tel:focus{
-    color: #2196F3;
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: #2196f3;
 }
 /* section main hero */
-.hero{
-    background: #2F303A;
+.hero {
+  background: #2f303a;
 }
 /* maim hero text */
-.hero-text{
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;   
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /* main button text */
-.hero-btn{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
 /* headlines of benefits */
-.list-benefits-headline{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: #212121;
+.list-benefits-headline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 /* text of benefits */
-.list-benefits-text{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
+.list-benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
-.action-headline-text{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+/* headline text what we do */
+.action-headline-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* section ouer team */
+/* headline ouer team */
+.team-headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* name  */
+.team-list-headline {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* text team */
+.team-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+
+/* PORTFOLIO */ 
+.section-btn > .btn-list > .btn-list-item > button{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+/* hover and focus on buttons */
+.section-btn > .btn-list > .btn-list-item > button:hover,
+.section-btn > .btn-list > .btn-list-item > button:focus{
+    color: #FFFFFF;
+    background: #2196F3;
+}
+/* main images head text */
+.main-img-headlist{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.main-img-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+
 }
