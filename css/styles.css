@@ -1,64 +1,144 @@
-/* font on oll */
-body {
-  font-family: "Roboto";
+:root {
+  --main-text-color: #212121;
+  --main-hover-color: #2196f3;
 }
-/* take away points from everyone */
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
 .list {
   list-style: none;
 }
-/* take away emphasis */
 .link {
   text-decoration: none;
 }
-/* header logo */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ==========HEADER================ */
+/* =====LOGO===== */
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--main-hover-color);
+  margin-right: 50px;
 }
 /* part of the logo black */
 span {
-  color: #212121;
+  color: var(--main-text-color);
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
 /* text nav */
 .header-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
+  padding: 20px;
+}
+.header-list > .header-list-item + .header-list-item {
+  margin-left: 50px;
+}
+.header-list:last-child {
+  margin-right: 290px;
+}
+.header {
+  padding: 32px 0px;
+  border: 1px solid #ececec;
 }
 /* text mail and tel */
-.header-mail,
-.header-tel {
+.header-contact-list {
+  display: flex;
+}
+.header-contact-text {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
+.header-contact-list .header-contact-item + .header-contact-item {
+  margin-left: 50px;
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--main-hover-color);
+}
 /* hover to header text */
 .header-list-link:hover,
 .header-list-link:focus {
-  color: #2196f3;
+  color: var(--main-hover-color);
 }
 /* hover to header mail and tel*/
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
-  color: #2196f3;
+  color: var(--main-hover-color);
 }
-/* section main hero */
+.header-contact {
+  display: flex;
+}
+.active {
+  color: var(--main-hover-color);
+}
+/* ===============HEADER============== */
+
+/* =================HERO==================*/
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .hero {
+  display: flex;
+  height: 600px;
   background: #2f303a;
+  text-align: center;
+  align-items: center;
 }
 /* maim hero text */
-.hero-text {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -66,24 +146,50 @@ span {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 /* main button text */
+
 .hero-btn {
+  padding: 10px 32px 10px 32px;
+  letter-spacing: 0.06em;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
   color: #ffffff;
+  background: #2196f3;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* headlines of benefits */
+.hero-btn:hover,
+.hero-btn:active {
+  background: #178ae8;
+}
+
+/* =================HERO==================*/
+
+/* <!--================BEBEFITS========= --> */
+.bebefits {
+  display: flex;
+}
+.list-benefits-headline {
+  margin-bottom: 10px;
+}
+
 .list-benefits-headline {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #212121;
+}
+.list-benefits {
+  display: flex;
+  margin-top: 94px;
+}
+.list-benefits-item + .list-benefits-item {
+  margin-left: 30px;
 }
 /* text of benefits */
 .list-benefits-text {
@@ -93,6 +199,18 @@ span {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+/* <!--================BEBEFITS========= --> */
+
+/* <!-- ===============IMAGES=========== --> */
+.action{
+  display: flex;
+  margin-top: 118px;
+
+}
+.action-list{
+  display: flex;
+}
 /* headline text what we do */
 .action-headline-text {
   font-weight: 700;
@@ -100,9 +218,9 @@ span {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  margin-bottom: 50px;
 }
-
+/*   <!-- ===============IMAGES=========== --> */
 /* section ouer team */
 /* headline ouer team */
 .team-headline {
@@ -119,7 +237,6 @@ span {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 /* text team */
 .team-list-text {
@@ -131,37 +248,59 @@ span {
   color: #757575;
 }
 
-
-/* PORTFOLIO */ 
-.section-btn > .btn-list > .btn-list-item > button{
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+/*==============PORTFOLIO================== */
+.section-btn > .btn-list > .btn-list-item > button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  cursor: pointer;
 }
 /* hover and focus on buttons */
 .section-btn > .btn-list > .btn-list-item > button:hover,
-.section-btn > .btn-list > .btn-list-item > button:focus{
-    color: #FFFFFF;
-    background: #2196F3;
+.section-btn > .btn-list > .btn-list-item > button:focus {
+  color: #ffffff;
+  background: #2196f3;
 }
 /* main images head text */
-.main-img-headlist{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: #212121;
+.main-img-headlist {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 }
 
-.main-img-text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: #757575;
-
+.main-img-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.footer-list {
+  background: #2f303a;
+}
+.footer-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-list-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.address {
+  font-style: normal;
+}
+.footer-list-item:hover,
+.footer-list-item:focus {
+  color: var(--main-hover-color);
 }
