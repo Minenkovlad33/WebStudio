@@ -1,0 +1,119 @@
+/*HEADER*/
+.header .container,
+.nav,
+.contacts,
+.nav .list {
+  display: flex;
+  align-items: center;
+}
+
+.header .link {
+  color: var(--prime-linktxt-color);
+}
+
+.link {
+  position: relative;
+}
+
+.nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav .current {
+  color: var(--prime-link-color);
+}
+.current::after {
+  color: var(--prime-link-color);
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--prime-link-color);
+  border-radius: 2px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--prime-link-color);
+  margin-right: 93px;
+}
+
+.header .logo-studio {
+  color: #000000;
+}
+.header .link,
+.header .mail,
+.header .phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  padding-right: 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--all-hovfoc-function);
+}
+
+.contacts {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header .mail,
+.header .phone {
+  color: var(--prime-text-color);
+  display: flex;
+  align-items: center;
+}
+
+.icon-mail {
+  height: 12px;
+  width: 16px;
+  fill: var(--prime-text-color);
+  margin-right: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--all-hovfoc-function);
+}
+.icon-phone {
+  height: 16px;
+  width: 10px;
+  fill: var(--prime-text-color);
+  margin-right: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--all-hovfoc-function);
+}
+
+.header .link:hover,
+.header .link:focus,
+.mail:hover .icon-mail,
+.mail:focus .icon-mail,
+.phone:hover .icon-phone,
+.phone:focus .icon-phone {
+  color: var(--prime-link-color);
+  fill: var(--prime-link-color);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
