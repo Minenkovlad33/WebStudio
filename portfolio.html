@@ -13,58 +13,68 @@
         rel="stylesheet" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <!-- ==========HEADER======== -->
     <header class="header">
-        <div class="container">
-          <nav class="header-nav">
-            <a class="header-logo link" href="./index.html"
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header-logo link" href="./index.html"
             >Web<span>Studio</span></a
           >
-            <ul class="header-list list">
-              <li class="header-list-item">
-                <a class="header-list-link link" href="./index.html"
-                  >Студія</a
-                >
-              </li>
-              <li class="header-list-item">
-                <a class="header-list-link link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="header-list-item">
-                <a class="header-list-link link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-contact">
-            <ul class="header-contact-list list">
-              <li class="header-contact-item">
-                <a class="header-contact-text link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="header-contact-item">
-                <a class="header-contact-text link" href="tel:+380961111111"
-                  >+380961111111</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div> 
+          <ul class="header-list list">
+            <li class="header-list-item">
+              <a class="header-list-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="header-list-item ">
+              <a class="header-list-link link current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="header-list-item">
+              <a class="header-list-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contact">
+          <ul class="header-contact-list list">
+            <li class="header-contact-item">
+              <a
+                class="header-contact-text link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contact-item">
+              <a class="header-contact-text link" href="tel:+38 096 111 11 11"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- =====MAIN===== -->
     <main>
         <!-- section buttons -->
         <section class="section-btn">
+          <div class="container">
             <h1 class="visually-hidden">Portfolio</h1>
             <ul class="btn-list list">
-                <li class="btn-list-item"><button type="button">Усі</button></li>
-                <li class="btn-list-item"><button type="button">Веб-сайти</button></li>
-                <li class="btn-list-item"><button type="button">Додатки</button></li>
-                <li class="btn-list-item"><button type="button">Дизайн</button></li>
-                <li class="btn-list-item"><button type="button">Маркетинг</button></li>
+                <li><button class="btn" type="button">Усі</button></li>
+                <li><button class="btn" type="button">Веб-сайти</button></li>
+                <li><button class="btn" type="button">Додатки</button></li>
+                <li><button class="btn" type="button">Дизайн</button></li>
+                <li><button class="btn" type="button">Маркетинг</button></li>
             </ul>
             <!-- section images -->
             <ul class="main-img-list list">
@@ -76,7 +86,7 @@
                 </li>
                 <li class="main-img-list-item">
                     <img src="./img/img-3-2.jpg" alt="basketboll players" width="370px" height="294px">
-                    <h2 class="main-img-headlist">Постер New Orlean vs Golden Star</h2>
+                    <h2 class="main-img-headlist"> New Orlean vs Golden Star</h2>
                     <p class="main-img-text">Дизайн</p>
                     </img>
                 </li>
@@ -123,6 +133,7 @@
                     </img>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     <!-- footer -->

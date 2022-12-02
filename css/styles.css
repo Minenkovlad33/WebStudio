@@ -1,9 +1,21 @@
 :root {
-  --main-text-color: #212121;
-  --main-hover-color: #2196f3;
+
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196f3;
+    --container-bg-color: #ffffff;
+    --container-border-color: #eeeeee;
+    --button-bg-color: #f5f4fa;
+    --logo-main-color: #000000;
+    --footer-background-color: #2f303a;
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+  
 }
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--container-bg-color);
+  letter-spacing: 0.03em;
 }
 h1,
 h2,
@@ -15,14 +27,20 @@ p {
   margin: 0;
 }
 ul {
-  padding: 0;
   margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
 .list {
   list-style: none;
+  color: var(--primary-text-color);
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -44,12 +62,12 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--main-hover-color);
+  color: var(--accent-color);
   margin-right: 50px;
 }
 /* part of the logo black */
 span {
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .header-nav {
@@ -69,14 +87,14 @@ span {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  padding: 20px;
+  color: var(--primary-text-color);
+  padding: 32px 0px 32px 0px;
 }
 .header-list > .header-list-item + .header-list-item {
   margin-left: 50px;
 }
 .header-list:last-child {
-  margin-right: 290px;
+  margin-right: 250px;
 }
 .header {
   padding: 32px 0px;
@@ -99,29 +117,36 @@ span {
 
 .header-contact:hover,
 .header-contact:focus {
-  color: var(--main-hover-color);
+  color: var(--accent-color);
 }
 /* hover to header text */
 .header-list-link:hover,
 .header-list-link:focus {
-  color: var(--main-hover-color);
+  color: var(--accent-color);
 }
 /* hover to header mail and tel*/
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
 .header-tel:focus {
-  color: var(--main-hover-color);
+  color: var(--accent-color);
 }
 .header-contact {
   display: flex;
 }
-.active {
-  color: var(--main-hover-color);
+.icon-contact-mail{
+  fill: currentColor;
 }
+.header-contact-text{
+  display: flex;
+align-items: center;
+gap: 8px;
+}
+
 /* ===============HEADER============== */
 
 /* =================HERO==================*/
+
 
 .container {
   max-width: 1200px;
@@ -129,13 +154,22 @@ span {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 .hero {
   display: flex;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   height: 600px;
   background: #2f303a;
   text-align: center;
   align-items: center;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 /* maim hero text */
 .hero-title {
@@ -165,7 +199,7 @@ span {
 }
 .hero-btn:hover,
 .hero-btn:active {
-  background: #178ae8;
+  background: #147fd6;
 }
 
 /* =================HERO==================*/
@@ -247,60 +281,127 @@ span {
   letter-spacing: 0.03em;
   color: #757575;
 }
+/*   <!-- ===============IMAGES=========== --> */
+
+/* <!-- =================OUER TEAM============== --> */
+.team{
+  display: flex; 
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.team-headline{
+margin-bottom: 50px;
+}
+.team-list
+{
+  display: flex;
+}
+.team-list .team-list-item + .team-list-item{
+  margin-left: 30px;
+}
+.team-list-headline{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* <!-- =================OUER TEAM============== --> */
+
+/* <!-- FOOTER --> */
+.footer{
+  background: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo{
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+
+}
+.footer-logo span{
+  color: #ffffff;
+  
+}
+
+.footer-list .footer-list-item + .footer-list-item{
+  margin-top: 9px;
+}
+.footer-list-item:first-child{
+  margin-top: 20px;
+}
+/* <!-- FOOTER --> */
+
 
 /*==============PORTFOLIO================== */
-.section-btn > .btn-list > .btn-list-item > button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-  cursor: pointer;
-}
-/* hover and focus on buttons */
-.section-btn > .btn-list > .btn-list-item > button:hover,
-.section-btn > .btn-list > .btn-list-item > button:focus {
-  color: #ffffff;
-  background: #2196f3;
-}
-/* main images head text */
-.main-img-headlist {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-}
 
-.main-img-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.footer-list {
-  background: #2f303a;
-}
-.footer-list-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-list-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
 .address {
   font-style: normal;
 }
 .footer-list-item:hover,
 .footer-list-item:focus {
-  color: var(--main-hover-color);
+  color: var(--accent-color);
 }
+
+.section-btn{
+  display: flex;
+  margin-top: 100px;
+}
+.btn-list{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  list-style: none;
+  gap: 8px;
+}
+
+.btn{
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-img-list{
+  display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.header-list .current{
+  color: var(--accent-color);
+} 
+.current {
+  position: relative;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+

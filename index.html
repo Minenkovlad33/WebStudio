@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -24,10 +31,10 @@
           >
           <ul class="header-list list">
             <li class="header-list-item">
-              <a class="header-list-link link active" href="">Студія</a>
+              <a class="header-list-link link current" href="./index.html">Студія</a>
             </li>
-            <li class="header-list-item">
-              <a class="header-list-link link" href="./portfolio.html"
+            <li class="header-list-item ">
+              <a class="header-list-link link " href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -135,8 +142,9 @@
           </ul>
         </div>
       </section>
-      <!-- section ouer team -->
+      <!-- =================OUER TEAM============== -->
       <section class="team">
+        <div class="container">
         <h2 class="team-headline">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list-item list">
@@ -180,32 +188,35 @@
             <p class="team-list-text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer class="footer">
+      <div class="container">
       <address class="address">
-        <a class="header-logo link" href="./index.html"
+        <a class="footer-logo link" href="./index.html"
           >Web<span>Studio</span></a
         >
         <ul class="footer-list list">
-          <li>
+          <li class="footer-list-item">
             <a class="footer-list-address link" href=""
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="footer-list-item">
             <a class="footer-list-item link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="footer-list-item">
             <a class="footer-list-item link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
