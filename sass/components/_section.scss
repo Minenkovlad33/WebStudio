@@ -1,0 +1,23 @@
+.section {
+  @include padding-tp-btm(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include padding-tp-btm(94px, 94px);
+  }
+}
+
+.section__title {
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+
+  color: var(--title-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}

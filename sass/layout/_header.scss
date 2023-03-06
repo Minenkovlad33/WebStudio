@@ -1,0 +1,129 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header__container {
+  @include align-flex();
+}
+
+.header__logo {
+  @include padding-tp-btm(16px, 16px);
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav__list,
+  .contacts {
+    display: none;
+  }
+
+  .header__container {
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    @include align-flex();
+    height: 80px;
+  }
+
+  .header__logo {
+    @include padding-tp-btm(21px, 21px);
+    margin-right: 88px;
+  }
+
+  .nav {
+    @include align-flex();
+  }
+
+  .nav__list {
+    @include align-flex(inline-flex);
+  }
+
+  .nav__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .nav__link {
+    @include padding-tp-btm(32px, 32px);
+    color: var(--title-color);
+    transition: color var(--duration-animation) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .nav__link--current {
+    position: relative;
+    color: var(--accent-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
+  .contacts {
+    margin-left: auto;
+
+    &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  }
+  .contacts__link {
+    transition: color var(--duration-animation) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    @include padding-tp-btm(24px, 24px);
+    margin-right: 93px;
+  }
+
+  .contacts {
+    @include align-flex(inline-flex);
+  }
+
+  .contacts__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .contacts__link {
+    @include align-flex();
+    @include padding-tp-btm(32px, 32px);
+  }
+}

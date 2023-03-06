@@ -1,0 +1,38 @@
+.services {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__list {
+    display: flex;
+  }
+
+  .services__item {
+    position: relative;
+    --grid-item: 3;
+  }
+
+  .services__overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    min-height: 70px;
+    @include padding-tp-btm(27px, 27px);
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  .services__subtitle {
+    font-weight: 700;
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primary-bcg-color);
+  }
+}
